@@ -261,14 +261,15 @@
                     <div class="mt-4 pt-6 border-t border-white/10">
                         <p class="text-gray-400 text-sm mb-3">O apoya directamente mediante tarjeta o saldo PayPal:</p>
                         
-                        <!-- Pega la Parte 2 exacta que te dio PayPal aquí dentro -->
-                        <div id="paypal-container-DDLQVELV4Y6VN" class="bg-white p-4 rounded-xl mt-4 shadow-inner"></div>
-                        <script>
-                            paypal.HostedButtons({
-                                hostedButtonId: "DDLQVELV4Y6VN",
-                            }).render("#paypal-container-DDLQVELV4Y6VN")
-                        </script>
-                        <!-- Fin Parte 2 -->
+                        <!-- Contenedor Claro Forzado -->
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md border border-gray-300" style="color-scheme: light; color: black;">
+                            <div id="paypal-container-DDLQVELV4Y6VN"></div>
+                            <script>
+                                paypal.HostedButtons({
+                                    hostedButtonId: "DDLQVELV4Y6VN",
+                                }).render("#paypal-container-DDLQVELV4Y6VN")
+                            </script>
+                        </div>
                         
                     </div>
 
