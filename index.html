@@ -73,6 +73,7 @@
         ::-webkit-scrollbar-thumb { background: #2dd4bf; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
     </style>
+<script src="https://www.paypal.com/sdk/js?client-id=BAACf1_jv0ze3xAJB98rG4OICE0izTwRvFboyPkH6eCZrUDAVgRTFUxViGdGU7jxIMjp-HR9cXhjGBKCS0&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
 </head>
 <body class="antialiased selection:bg-magic-500 selection:text-white relative">
 
@@ -256,6 +257,20 @@
                         </button>
                     </div>
                 </div>
+                <!-- PayPal Inteligente Oficial -->
+                    <div class="mt-4 pt-6 border-t border-white/10">
+                        <p class="text-gray-400 text-sm mb-3">O apoya directamente mediante tarjeta o saldo PayPal:</p>
+                        
+                        <!-- Pega la Parte 2 exacta que te dio PayPal aquí dentro -->
+                        <div id="paypal-container-DDLQVELV4Y6VN"></div>
+                        <script>
+                            paypal.HostedButtons({
+                                hostedButtonId: "DDLQVELV4Y6VN",
+                            }).render("#paypal-container-DDLQVELV4Y6VN")
+                        </script>
+                        <!-- Fin Parte 2 -->
+                        
+                    </div>
 
                 <!-- Columna 2: Binance Pay & Patreon -->
                 <div class="space-y-8">
